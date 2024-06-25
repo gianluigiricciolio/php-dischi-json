@@ -10,11 +10,19 @@
 
 <body>
     <div id="app" v-cloak>
-        <h1>{{ string }}</h1>
+        <div v-for="disco in dischi" class="disco">
+            <img :src="disco.img_src" alt="">
+            <h1>{{ disco.album }}</h1>
+            <p>{{ disco.author }}</p>
+            <p>{{ disco.release_date }}</p>
+        </div>
+
     </div>
 
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-    <script type="module" src="./main.js"></script>
+    <script src="./main.js"></script>
 </body>
 
 </html>
