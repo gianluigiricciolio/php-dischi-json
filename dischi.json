@@ -3,36 +3,42 @@
         "album": "Live at Wembley 86",
         "author": "Queen",
         "release_date": "1992",
-        "img_src": "./img/Queen_Live_At_Wembley_'86.png"
+        "img_src": "./img/Queen_Live_At_Wembley_'86.png",
+        "genre": "rock"
     },
     {
         "album": "New Jersey",
         "author": "Bon Jovi",
         "release_date": "1988",
-        "img_src": "./img/Bon_Jovi_New_Jersey.png"
+        "img_src": "./img/Bon_Jovi_New_Jersey.png",
+        "genre": "rock"
     },
     {
         "album": "Ten's Summoner's Tales ",
         "author": "Sting",
         "release_date": "1993",
-        "img_src": "./img/Sting_-_Ten_Summoner's_Tales.png"
+        "img_src": "./img/Sting_-_Ten_Summoner's_Tales.png",
+        "genre": "rock"
     },
     {
         "album": "Steve Gadd band",
         "author": "Steve Gadd band",
         "release_date": "2018",
-        "img_src": "./img/Steve_Gadd_Band.png"
+        "img_src": "./img/Steve_Gadd_Band.png",
+        "genre": "rock"
     },
     {
         "album": "Brave new World",
         "author": "Iron Maiden",
         "release_date": "2000",
-        "img_src": "./img/Iron_Maiden_-_Brave_New_World.png"
+        "img_src": "./img/Iron_Maiden_-_Brave_New_World.png",
+        "genre": "rock"
     },
     {
         "album": "One more car, one more rider",
         "author": "Eric Clapton",
         "release_date": "2002",
-        "img_src": "./img/Eric_Clapton_OMCOMR.png"
+        "img_src": "./img/Eric_Clapton_OMCOMR.png",
+        "genre": "rock"
     }
 ]

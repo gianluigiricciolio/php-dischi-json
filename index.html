@@ -12,17 +12,31 @@
 
 <body>
     <div id="app" v-cloak>
-        <div class="container view">
-            <div class="row row-cols-3">
-                <div v-for="disco in dischi" class="col disco text-center">
-                    <img :src="disco.img_src" alt="">
-                    <h3>{{ disco.album }}</h3>
-                    <p>{{ disco.author }}</p>
-                    <p>{{ disco.release_date }}</p>
+        <div class="view">
+
+            <div class="navbar p-3">boolify</div>
+            <div class="container my-5 d-flex align-items-center">
+                <div class="row row-cols-3 g-3">
+                    <div v-for="(disco,i) in dischi" class="col disco ">
+                        <img @click="setDiscoIndex(i)" :src="disco.img_src" alt="">
+                        <h3>{{ disco.album }}</h3>
+                        <div>{{ disco.author }}</div>
+                        <div>{{ disco.release_date }}</div>
+                    </div>
+                </div>
+
+            </div>
+            <div v-if="selectedDisc!==null"
+                class="selected-disc d-flex align-items-center justify-content-center text-white">
+                <div class="disco">
+                    <img :src="dischi[selectedDisc].img_src" alt="">
+                    <h3>{{dischi[selectedDisc].album}}</h3>
+                    <div>{{dischi[selectedDisc].author}}</div>
+                    <div>{{dischi[selectedDisc].release_date}}</div>
                 </div>
             </div>
-
         </div>
+
     </div>
 
 
